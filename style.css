@@ -147,7 +147,7 @@ footer p {
 }
 
 
-
+/* Modo escuro */
 .dark-mode-toggle {
     background: none;
     border: none;
@@ -183,5 +183,32 @@ body.dark-mode .secao {
 }
 
 body.dark-mode footer {
+    background-color: var(--cor-primaria);
+}
+
+/* Modo eclipse */
+body.eclipse-mode {
+    --cor-texto: #e0f7fa; 
+    --cor-fundo: #263238; 
+    --cor-primaria: #37474f; 
+    --cor-secundaria: #a7ffeb;
+    --cor-terciaria: #64ffda; 
+    --cor-destaque: #ffab91; 
+}
+
+body.eclipse-mode header {
+    background-color: var(--cor-primaria);
+}
+
+body.eclipse-mode h1,
+body.eclipse-mode h2 {
+    color: var(--cor-secundaria);
+}
+
+body.eclipse-mode .secao {
+    border-bottom: 1px solid #455a64;
+}
+
+body.eclipse-mode footer {
     background-color: var(--cor-primaria);
 }
