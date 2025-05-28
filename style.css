@@ -5,6 +5,9 @@
     box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
     --cor-primaria: #1a5f7a;
@@ -39,6 +42,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
+    text-transform: uppercase;
 }
 
 .logo {
@@ -114,6 +118,35 @@ p {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
+
+#quiz{
+    text-align: center;
+}
+.quiz__texto{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.botao__quiz {
+  background-color: #007B8A; /* tom azul-petróleo */
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 18px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.botao__quiz:hover {
+  background-color: #005f6a; /* tom mais escuro no hover */
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
 
 footer {
     background-color: var(--cor-primaria);
