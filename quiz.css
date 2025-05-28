@@ -1,0 +1,113 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-primaria: #1a5f7a;
+    --cor-secundaria: #57c5b6;
+    --cor-terciaria: #159895;
+    --cor-texto: #333333;
+    --cor-fundo: #f9f9f9;
+    --cor-destaque: #ff7b54;
+    --fonte-titulos: 'Poppins', sans-serif;
+    --fonte-texto: 'Open Sans', sans-serif;
+}
+
+.body__quiz{
+    font-family: var(--fonte-titulos);
+    background-color: #f5f9fa;
+    color: #003e45;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#icone{
+    width: 30px;
+    height: auto;
+}
+
+.cabecalho__quiz{
+    display: flex;
+    
+    align-items: center;
+    background-color: var(--cor-primaria);
+    color: #ffffff;
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.titulo__cabecalho{
+    margin-inline: 11em;
+}
+
+.icone__back{
+    margin-left: 1em;
+    cursor: pointer;
+}
+
+.quiz-card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 100px;
+      max-width: 1200px;
+      width: 100%;
+      margin: 3rem 0;
+    }
+
+.pergunta{
+    text-transform: uppercase;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+.opcoes label {
+      display: block;
+      background-color: #e6f2f3;
+      padding: 10px 15px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+
+.opcoes input[type="radio"] {
+      display: none;
+    }
+
+.opcoes label:hover {
+      background-color: #d0ecee;
+}
+
+
+.botao{
+    text-align: center;
+}
+.btn__enviar {
+      background-color: #007B8A;
+      color: #ffffff;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background-color 0.3s;
+    }
+
+.btn__enviar:hover {
+      background-color: #005f6a;
+}
+

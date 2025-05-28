@@ -1,0 +1,1 @@
+ document.getElementById('icone').style.filter = "brightness(0) invert(1)";
