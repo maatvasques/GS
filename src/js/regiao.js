@@ -1,7 +1,6 @@
 const campoRegiao = document.getElementById("campoRegiao");
 const btnRegiao = document.getElementById("btnRegiao");
 const sctProblema = document.getElementById("problema");
-const btnSaida = document.getElementsByClassName("btnSaida");
 
 btnRegiao.addEventListener("click", (event) => {
   event.preventDefault();
@@ -35,6 +34,7 @@ btnRegiao.addEventListener("click", (event) => {
         <h4>Mas o que é o Inverno Amazônico? É mais ou menos quando começa o verão no Hemisfério Sul, no final do ano, que as chuvas ganham força na região Norte - e duram até maio. O fenômeno é causado pela Zona de Convergência Intertropical (ZCIT), uma faixa de nuvens que se forma na região equatorial do planeta a partir dos ventos alísios, que sopram dos hemisférios Norte e Sul. Quanto mais intenso for esse sistema meteorológico, maior é o volume de chuva.</h4>
         <img src="src/assets/images/foto-enchente-amazonica.avif" alt="Enchente na Amazônia">
         </div>
+        <div class="saida"><button class="btnSaida">_________________</button></div>
         `;
         break;
       case "no":
@@ -44,6 +44,7 @@ btnRegiao.addEventListener("click", (event) => {
         <h4>As fortes chuvas foram influenciadas por fenômenos meteorológicos como a Zona de Convergência Intertropical (ZCIT) e o Vórtice Ciclônico de Altos Níveis (VCAN), que aumentaram a umidade e favoreceram a formação de nuvens de tempestade na região.</h4>
         <img src="src/assets/images/chuva-nordeste.webp" alt="Enchente na região Nordeste">
         </div>
+        <div class="saida"><button class="btnSaida">_________________</button></div>
         `;
         break;
       case "co":
@@ -53,6 +54,7 @@ btnRegiao.addEventListener("click", (event) => {
         <h4>O Instituto Nacional de Meteorologia (Inmet) apontou que a transição do La Niña para condições neutras no Pacífico contribuiu para a redução das chuvas e o aumento das temperaturas na região.</h4>
         <img src="src/assets/images/chuva-co.webp" alt="Enchente na região Centro-Oeste">
         </div>
+        <div class="saida"><button class="btnSaida">_________________</button></div>
         `;
         break;
       case "sud":
@@ -62,6 +64,7 @@ btnRegiao.addEventListener("click", (event) => {
           <h4>O fenômeno meteorológico ZCAS favoreceu a formação de nuvens carregadas, levando a precipitações acima da média e impactos significativos em áreas urbanas e rurais da região Sudeste.</h4>
           <img src="src/assets/images/enchente-sudeste.jpg" alt="Enchente na região Sudeste">
           </div>
+          <div class="saida"><button class="btnSaida">_________________</button></div>
         `;
         break;
       case "sul":
@@ -77,5 +80,12 @@ btnRegiao.addEventListener("click", (event) => {
     }
     regiaoEnchente.innerHTML = conteudo;
     sctProblema.append(regiaoEnchente);
+    const btnSaida = document.getElementsByClassName("btnSaida");
+    for (let btn of btnSaida) {
+      btn.addEventListener("click", (event) => {
+        event.preventDefault();
+        regiaoEnchente.remove();
+      });
+    }
   });
 });
