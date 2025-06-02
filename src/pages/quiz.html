@@ -1,33 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/quiz.css">
-    <link rel="stylesheet icon" href="/images/Logo.png">
-     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-</head>
-<body class="body__quiz">
+    <link rel="stylesheet" href="src/css/quiz.css" />
+    <link rel="stylesheet icon" href="src/assets/images/Logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body__quiz">
     <header class="cabecalho__quiz">
-        <a href="/index.html"><div class="icone__back"><img id="icone" src="/images/arrow-bar-left.svg" alt=""></div></a>
-        <div class="titulo__cabecalho"> Quiz AquaSafe - Prevenção de Enchentes</div>
+      <a href="src/pages/index.html"
+        ><div class="icone__back">
+          <img
+            id="icone"
+            src="src/assets/images/arrow-bar-left.svg"
+            alt=""
+          /></div
+      ></a>
+      <div class="titulo__cabecalho">
+        Quiz AquaSafe - Prevenção de Enchentes
+      </div>
     </header>
 
     <div class="quiz-card">
-        <div class="pergunta">1. O que pode contribuir para o aumento de enchentes nas cidades?</div>
-        <div class="opcoes">
-        <label><input type="radio" name="q1"> Plantio de árvores em encostas</label>
-        <label><input type="radio" name="q2"> Uso de pavimentos permeáveis</label>
-        <label><input type="radio" name="q3"> Descarte de lixo em vias públicas</label>
-        <label><input type="radio" name="q4"> Preservação de áreas verdes</label>
+      <form id="quizForm">
+        <div class="pergunta">
+          O que pode contribuir para o aumento de enchentes nas cidades?
         </div>
-        <div class="botao"><button class="btn__enviar">Enviar</button></div>
-        
+        <div class="opcoes">
+          <label class="opcao"
+            ><input type="radio" name="q1" value="0" /> Plantio de árvores em
+            encostas</label
+          >
+          <label class="opcao"
+            ><input type="radio" name="q1" value="0" /> Uso de pavimentos
+            permeáveis</label
+          >
+          <label class="opcao"
+            ><input type="radio" name="q1" value="1" /> Descarte de lixo em vias
+            públicas</label
+          >
+          <label class="opcao"
+            ><input type="radio" name="q1" value="0" /> Preservação de áreas
+            verdes</label
+          >
+        </div>
+
+        <div class="botoes__container">
+          <div class="botao">
+            <button type="button" class="btn__enviar proxima">
+              <div class="texto__proxima">Próxima pergunta</div>
+
+              <img
+                id="arrow__right"
+                src="src/assets/images/arrow-right-short.svg"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+      </form>
     </div>
 
-      <div id="resultado" class="resultado"></div>
-
-</body>
-<script src="quiz.js"></script>
+    <div id="resultado" class="resultado"></div>
+  </body>
+  <script src="src/js/quiz.js"></script>
 </html>
