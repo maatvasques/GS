@@ -204,12 +204,53 @@ footer p {
 
 #regiaoEnchente {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   margin: 40px 20px 0px 20px;
-  padding: 10px;
-  background-color: var(--cor-destaque);
+  padding: 35px 30px;
+  background-color: var(--cor-secundaria);
   border-radius: 10px;
+  box-shadow: 10px 14px 14px rgba(0, 0, 0, 0.1);
+}
+
+#regiaoEnchente h1 {
+  max-width: 80vw;
+  font-size: 50px;
+  color: var(--cor-primaria);
+}
+
+#regiaoEnchente h3 {
+  font-size: 24px;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.textImg {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  gap: 40px;
+}
+
+#regiaoEnchente h4 {
+  max-width: 45vw;
+  font-size: 16px;
+  margin-left: 30px;
+  flex-wrap: wrap;
+}
+
+#regiaoEnchente img {
+  max-width: 40%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.saida {
+  font-size: 60px;
+}
+
+.saida .btnSaida {
+  background-color: var(--cor-secundaria);
+  border: var(--cor-secundaria);
 }
 
 /* Responsividade */
