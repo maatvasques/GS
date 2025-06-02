@@ -86,10 +86,6 @@
       display: none;
     }
 
-.opcoes label:hover {
-      background-color: #d0ecee;
-}
-
 .botoes__container{
     display: flex;
     justify-content: center;
@@ -125,4 +121,11 @@
       cursor: pointer;
       margin-top: 20px;
       transition: background-color 0.3s;
+}
+
+.opcao.selecionada {
+  background-color: #159895; /* Cor de fundo quando selecionada */
+  color: white; /* Cor da fonte */
+  border: none; /* Borda extra para dar destaque */
+  transition: 0.3s;
 }
