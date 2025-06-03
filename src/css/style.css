@@ -58,17 +58,77 @@ header {
   text-decoration: none;
   font-weight: 600;
   font-size: 1.1rem;
+  position: relative;
+  /* Adicionado */
   transition: color 0.3s;
+}
+
+.menu a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: -5px;
+  /* Pequeno espaço abaixo do texto */
+  left: 0;
+  background-color: var(--cor-secundaria);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
 }
 
 .menu a:hover {
   color: var(--cor-secundaria);
 }
 
+.menu a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.background {
+  position: relative;
+  background-image: url(/src/assets/images/backgroundSustentavel.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: calc(100vh - 90px);
+  /* Subtrai o header */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100vh - 90px); /* Subtrai o header */
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* preto com 30% de transparência */
+  z-index: 1;
+}
+
+.titulo__apresentacao{
+  color: #fff;
+  text-transform: uppercase;
+  font-family: var(--fonte-texto);
+  font-weight: 800;
+  font-size: 48px;
+  z-index: 3;
+  margin: 0 4em;
 }
 
 .secao {
@@ -84,6 +144,9 @@ header .container {
 
 .conteudo {
   flex: 1;
+  align-items: center;
+  text-align: justify;
+  margin-inline: 25px;
 }
 
 h1,
@@ -116,6 +179,7 @@ p {
 #quiz {
   text-align: center;
 }
+
 .quiz__texto {
   text-align: center;
   font-size: 3rem;
@@ -123,7 +187,7 @@ p {
 }
 
 .botao__quiz {
-  background-color: #007b8a; /* tom azul-petróleo */
+  background-color: #007b8a;
   color: #ffffff;
   font-size: 16px;
   font-weight: 600;
@@ -138,7 +202,7 @@ p {
 }
 
 .botao__quiz:hover {
-  background-color: #005f6a; /* tom mais escuro no hover */
+  background-color: #005f6a;
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
@@ -172,11 +236,14 @@ footer p {
   text-transform: uppercase;
   transition: all 0.3s ease;
   color: #ffffff;
+  border: none;
+  text-align: center;
 }
 
 #btnRegiao:hover {
   background-color: #036e7a;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 #escolhaRegiao {
@@ -201,6 +268,7 @@ footer p {
   font-size: 20px;
   color: var(--cor-texto);
   margin-top: 10px;
+  cursor: pointer;
 }
 
 #regiaoEnchente {
@@ -252,6 +320,7 @@ footer p {
 .saida .btnSaida {
   background-color: var(--cor-secundaria);
   border: var(--cor-secundaria);
+  cursor: pointer;
 }
 
 /* Responsividade */
