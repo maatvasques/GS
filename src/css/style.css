@@ -40,6 +40,7 @@ header {
   top: 0;
   z-index: 100;
   text-transform: uppercase;
+  width: 100%;
 }
 
 .logo {
@@ -104,9 +105,9 @@ header .container {
   width: 100%;
   display: flex;
   flex-direction: column;
+  text-align: center;
   align-items: center;
   justify-content: center;
-  text-align: center;
 }
 
 
@@ -115,13 +116,14 @@ header .container {
   position: absolute;
   top: 0;
   left: 0;
-  height: calc(100vh - 90px); /* Subtrai o header */
+  height: calc(100vh - 90px);
+  /* Subtrai o header */
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* preto com 30% de transparência */
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 1;
 }
 
-.titulo__apresentacao{
+.titulo__apresentacao {
   color: #fff;
   text-transform: uppercase;
   font-family: var(--fonte-texto);
@@ -323,10 +325,105 @@ footer p {
   cursor: pointer;
 }
 
+
+
+/* CABECALHO MOBILE */
+
+.cabecalho__mobile {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--cor-primaria);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+
+.btn__abrir__menu i {
+  margin: 0 30px;
+  font-size: 40px;
+  color: #fff;
+  z-index: 1000;
+}
+
+.logotipo__mobile {
+  margin: 0 30px;
+  width: 65px;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* ESTILO MENU MOBILE */
+.menu__mobile {
+  background-color: var(--cor-primaria);
+  width: 100%;
+  max-height: 0;
+  position: fixed;
+  top: 5.5rem;
+  left: 0;
+  z-index: 999;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+  display: block;
+
+}
+
+.menu__mobile.abrir__menu {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.menu__mobile ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.menu__mobile li {
+  margin: 20px 0;
+}
+
+.menu__mobile a {
+  color: white;
+  text-decoration: none;
+  font-family: var(--fonte-texto);
+  font-size: 1.5rem;
+  display: block;
+  width: 100%;
+  padding-left: 0px;
+}
+
+.menu__mobile.abrir__menu~.overlay__menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.overlay__menu {
+  background-color: #000000d1;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 90px;
+  left: 0;
+  z-index: 888;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+}
+
+
+
+
 /* Responsividade */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .secao .container {
     flex-direction: column;
+    text-align: center;
   }
 
   .secao:nth-child(even) .container {
@@ -338,7 +435,41 @@ footer p {
     margin-top: 30px;
   }
 
-  .menu {
-    gap: 15px;
+  /* HEADER */
+  header:not(.cabecalho__mobile) {
+    display: none;
+  }
+
+  .cabecalho__mobile {
+    display: flex;
+  }
+
+  .container {
+    width: 88%;
+    /* 100% - 6% dos dois lados = 88% */
+    margin: 0 auto;
+    /* centraliza */
+    padding: 0;
+  }
+
+  /* MAIN */
+  .background {
+    height: calc(70vh - 90px);
+  }
+
+  .background::before {
+    height: calc(70vh - 90px);
+  }
+
+  .titulo__apresentacao {
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0px 8%;
+  }
+
+  /* PAGINA QUIZ */
+  .quiz__texto {
+    font-size: 1.5rem;
+    margin-inline: 6%;
   }
 }
