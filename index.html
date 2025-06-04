@@ -1,219 +1,261 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AquaSafe - Solução Inteligente Contra Enchentes</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet icon" href="src/assets/images/Logo.png" />
+    <!-- BOOTSTRAP ICONES -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <!-- FIM BOOTSTRAP ICONES -->
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AquaSafe - Solução Inteligente Contra Enchentes</title>
-  <link rel="stylesheet" href="src/css/style.css" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@300;500;700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet icon" href="src/assets/images/Logo.png" />
-  <!-- BOOTSTRAP ICONES -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
-  <!-- FIM BOOTSTRAP ICONES -->
-</head>
-
-<body>
-  <header>
-    <div class="container">
-      <img src="src/assets/images/Logo.png" alt="Logo AquaSafe" class="logo" />
-      <nav>
-        <ul class="menu">
-          <li><a href="#problema">Problema</a></li>
-          <li><a href="#tecnologias">Tecnologias</a></li>
-          <li><a href="#objetivos">Objetivos</a></li>
-          <li><a href="#publico">Público</a></li>
-          <li><a href="#beneficios">Benefícios</a></li>
-          <li><a href="#solucao">Solução</a></li>
-          <button id="darkModeToggle" class="dark-mode-toggle">
-            <img src="src/assets/images/simbulo-sol.png" alt="Modo Claro" id="themeIcon" />
-          </button>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- HEADER DO MOBILE -->
-  <header class="cabecalho__mobile">
-    <div class="btn__abrir__menu" id="btn__menu">
-      <!--btn__abrir__menu-->
-      <i class="bi bi-list"></i>
-    </div>
-    <!--FIM btn__abrir__menu-->
-
-    <div class="menu__mobile" id="menu__mobile">
-      <nav>
-        <ul>
-          <li><a href="#problema">Problema</a></li>
-          <li><a href="#tecnologias">Tecnologias</a></li>
-          <li><a href="#objetivos">Objetivos</a></li>
-          <li><a href="#publico">Público</a></li>
-          <li><a href="#beneficios">Benefícios</a></li>
-          <li><a href="#solucao">Solução</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="overlay__menu" id="overlay__menu"></div>
-
-    <div class="container__mobile">
-      <button id="darkModeToggle" class="dark-mode-toggle">
-        <img src="src/assets/images/simbulo-sol.png" alt="Modo Claro" id="themeIcon" />
-      </button>
-      <img src="/src/assets/images/Logo.png" alt="Logotipo sem fundo" class="logotipo__mobile" />
-    </div>
-  </header>
-  <!-- FIM HEADER DO MOBILE -->
-
-  <main>
-    <div class="slider">
-
-      <div class="slides">
-        <!-- RADIO BUTTONS -->
-        <input type="radio" name="radio-btn" id="radio1">
-        <input type="radio" name="radio-btn" id="radio2">
-        <input type="radio" name="radio-btn" id="radio3">
-        <!-- FIM RADIO BUTTONS -->
-
-
-        <div class="slide first"> <!--SLIDES IMAGES -->
-          <img src="/src/assets/images/imagem1-slide.png" alt="Imagem 1">
-        </div>
-        <div class="slide">
-          <img src="/src/assets/images/imagem2-slide.png" alt="Imagem 2">
-        </div>
-        <div class="slide">
-          <img src="/src/assets/images/imagem3-slide.png" alt="Imagem 3">
-        </div> <!--FIM SLIDES IMAGES -->
-      </div>
-      <div class="overlay">
-        <h1 class="titulo__apresentacao">
-        AquaSafe: solução sustentável para enchentes
-        </h1>
-      </div>
-
-      <div class="manual__navegacao">
-        <label for="radio1" class="manual__btn"></label>
-        <label for="radio2" class="manual__btn"></label>
-        <label for="radio3" class="manual__btn"></label>
-      </div>
-
-    </div>
-
-
-    <section id="problema" class="secao primeira">
+  <body>
+    <header>
       <div class="container">
-        <div class="conteudo">
-          <h1>O Problema das Enchentes</h1>
-          <p>
-            Enchentes causam danos materiais e perdas humanas em áreas urbanas
-            todos os anos.
-          </p>
-          <p>
-            Falta de sistemas de alerta precoce agrava os impactos nas
-            comunidades vulneráveis.
-          </p>
-          <div id="campoRegiao">
-            <button id="btnRegiao">Clique para ver sua região</button>
+        <img
+          src="src/assets/images/Logo.png"
+          alt="Logo AquaSafe"
+          class="logo"
+        />
+        <nav>
+          <ul class="menu">
+            <li><a href="#problema">Problema</a></li>
+            <li><a href="#tecnologias">Tecnologias</a></li>
+            <li><a href="#objetivos">Objetivos</a></li>
+            <li><a href="#publico">Público</a></li>
+            <li><a href="#beneficios">Benefícios</a></li>
+            <li><a href="#solucao">Solução</a></li>
+            <button id="darkModeToggle" class="dark-mode-toggle">
+              <img
+                src="src/assets/images/simbulo-sol.png"
+                alt="Modo Claro"
+                id="themeIcon"
+              />
+            </button>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HEADER DO MOBILE -->
+    <header class="cabecalho__mobile">
+      <div class="btn__abrir__menu" id="btn__menu">
+        <!--btn__abrir__menu-->
+        <i class="bi bi-list"></i>
+      </div>
+      <!--FIM btn__abrir__menu-->
+
+      <div class="menu__mobile" id="menu__mobile">
+        <nav>
+          <ul>
+            <li><a href="#problema">Problema</a></li>
+            <li><a href="#tecnologias">Tecnologias</a></li>
+            <li><a href="#objetivos">Objetivos</a></li>
+            <li><a href="#publico">Público</a></li>
+            <li><a href="#beneficios">Benefícios</a></li>
+            <li><a href="#solucao">Solução</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="overlay__menu" id="overlay__menu"></div>
+
+      <div class="container__mobile">
+        <button id="darkModeToggle" class="dark-mode-toggle">
+          <img
+            src="src/assets/images/simbulo-sol.png"
+            alt="Modo Claro"
+            id="themeIcon"
+          />
+        </button>
+        <img
+          src="/src/assets/images/Logo.png"
+          alt="Logotipo sem fundo"
+          class="logotipo__mobile"
+        />
+      </div>
+    </header>
+    <!-- FIM HEADER DO MOBILE -->
+
+    <main>
+      <div class="slider">
+        <div class="slides">
+          <!-- RADIO BUTTONS -->
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+          <!-- FIM RADIO BUTTONS -->
+
+          <div class="slide first">
+            <!--SLIDES IMAGES -->
+            <img src="/src/assets/images/imagem1-slide.png" alt="Imagem 1" />
           </div>
-          <div id="attEnchentes"></div>
+          <div class="slide">
+            <img src="/src/assets/images/imagem2-slide.png" alt="Imagem 2" />
+          </div>
+          <div class="slide">
+            <img src="/src/assets/images/imagem3-slide.png" alt="Imagem 3" />
+          </div>
+          <!--FIM SLIDES IMAGES -->
         </div>
-        <img id="imagem__enchente" src="src/assets/images/enchenteCidade.webp" alt="Rua alagada com casas inundadas"
-          class="imagem-secao" />
-      </div>
-    </section>
+        <div class="overlay">
+          <h1 class="titulo__apresentacao">
+            AquaSafe: solução sustentável para enchentes
+          </h1>
+        </div>
 
-    <section id="tecnologias" class="secao">
+        <div class="manual__navegacao">
+          <label for="radio1" class="manual__btn"></label>
+          <label for="radio2" class="manual__btn"></label>
+          <label for="radio3" class="manual__btn"></label>
+        </div>
+      </div>
+
+      <section id="problema" class="secao primeira">
+        <div class="container">
+          <div class="conteudo">
+            <h1>O Problema das Enchentes</h1>
+            <p>
+              Enchentes causam danos materiais e perdas humanas em áreas urbanas
+              todos os anos.
+            </p>
+            <p>
+              Falta de sistemas de alerta precoce agrava os impactos nas
+              comunidades vulneráveis.
+            </p>
+            <div id="campoRegiao">
+              <button id="btnRegiao">Clique para ver sua região</button>
+            </div>
+            <div id="attEnchentes"></div>
+          </div>
+          <img
+            id="imagem__enchente"
+            src="src/assets/images/enchenteCidade.webp"
+            alt="Rua alagada com casas inundadas"
+            class="imagem-secao"
+          />
+        </div>
+      </section>
+
+      <section id="tecnologias" class="secao">
+        <div class="container">
+          <img
+            src="src/assets/images/IOT.avif"
+            alt="Sensores e dispositivos IoT"
+            class="imagem-secao"
+          />
+          <div class="conteudo">
+            <h2>Tecnologias Utilizadas</h2>
+            <p>
+              Sensores IoT monitoram níveis de água em tempo real em pontos
+              estratégicos.
+            </p>
+            <p>
+              Modelos matemáticos que preveem riscos com base em dados
+              históricos e meteorológicos.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="objetivos" class="secao">
+        <div class="container">
+          <div class="conteudo">
+            <h2>Nossos Objetivos</h2>
+            <p>
+              Reduzir em 70% os danos causados por enchentes nas áreas
+              atendidas.
+            </p>
+            <p>
+              Alertar a população com até 3 horas de antecedência sobre riscos
+              iminentes.
+            </p>
+          </div>
+          <img
+            src="src/assets/images/comunidade-segura.png"
+            alt="Comunidade segura após enchente"
+            class="imagem-secao"
+          />
+        </div>
+      </section>
+
+      <section id="publico" class="secao">
+        <div class="container">
+          <img
+            src="src/assets/images/familiaEnchente.webp"
+            alt="Famílias em área de risco"
+            class="imagem-secao"
+          />
+          <div class="conteudo">
+            <h2>Público-Alvo</h2>
+            <p>
+              Moradores de áreas de risco e comunidades vulneráveis a enchentes.
+            </p>
+            <p>Defesas civis municipais e órgãos de gestão de emergências.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="beneficios" class="secao">
+        <div class="container">
+          <div class="conteudo">
+            <h2>Benefícios da Solução</h2>
+            <p>
+              Segurança para famílias e proteção de patrimônios contra danos.
+            </p>
+            <p>Dados precisos para planejamento urbano e ações preventivas.</p>
+          </div>
+          <img
+            src="src/assets/images/UsandoCelular.jpg"
+            alt="Pessoa usando app no celular"
+            class="imagem-secao"
+          />
+        </div>
+      </section>
+
+      <section id="solucao" class="secao">
+        <div class="container">
+          <img
+            src="src/assets/images/aplicativoEnchente.png"
+            alt="Sistema prevenindo enchente"
+            class="imagem-secao"
+          />
+          <div class="conteudo">
+            <h2>Como Ajuda no Dia a Dia</h2>
+            <p>
+              Alertas em tempo real permitem evacuação segura e proteção de
+              bens.
+            </p>
+            <p>
+              Monitoramento contínuo traz tranquilidade durante períodos de
+              chuva.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="quiz" class="secao">
+        <h2 class="quiz__texto">Topa participar de um Quiz de 10 perguntas?</h2>
+        <a id="btn__quiz" class="botao__quiz" href="src/pages/quiz.html"
+          >Clique aqui para participar</a
+        >
+      </section>
+    </main>
+
+    <footer>
       <div class="container">
-        <img src="src/assets/images/IOT.avif" alt="Sensores e dispositivos IoT" class="imagem-secao" />
-        <div class="conteudo">
-          <h2>Tecnologias Utilizadas</h2>
-          <p>
-            Sensores IoT monitoram níveis de água em tempo real em pontos
-            estratégicos.
-          </p>
-          <p>
-            Inteligência Artificial prevê riscos com base em dados históricos
-            e meteorológicos.
-          </p>
-        </div>
+        <p>© 2025 AquaSafe - Todos os direitos reservados</p>
+        <p>Solução inovadora para prevenção de enchentes urbanas</p>
       </div>
-    </section>
-
-    <section id="objetivos" class="secao">
-      <div class="container">
-        <div class="conteudo">
-          <h2>Nossos Objetivos</h2>
-          <p>
-            Reduzir em 70% os danos causados por enchentes nas áreas
-            atendidas.
-          </p>
-          <p>
-            Alertar a população com até 3 horas de antecedência sobre riscos
-            iminentes.
-          </p>
-        </div>
-        <img src="src/assets/images/comunidade-segura.png" alt="Comunidade segura após enchente" class="imagem-secao" />
-      </div>
-    </section>
-
-    <section id="publico" class="secao">
-      <div class="container">
-        <img src="src/assets/images/familiaEnchente.webp" alt="Famílias em área de risco" class="imagem-secao" />
-        <div class="conteudo">
-          <h2>Público-Alvo</h2>
-          <p>
-            Moradores de áreas de risco e comunidades vulneráveis a enchentes.
-          </p>
-          <p>Defesas civis municipais e órgãos de gestão de emergências.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="beneficios" class="secao">
-      <div class="container">
-        <div class="conteudo">
-          <h2>Benefícios da Solução</h2>
-          <p>
-            Segurança para famílias e proteção de patrimônios contra danos.
-          </p>
-          <p>Dados precisos para planejamento urbano e ações preventivas.</p>
-        </div>
-        <img src="src/assets/images/UsandoCelular.jpg" alt="Pessoa usando app no celular" class="imagem-secao" />
-      </div>
-    </section>
-
-    <section id="solucao" class="secao">
-      <div class="container">
-        <img src="src/assets/images/aplicativoEnchente.png" alt="Sistema prevenindo enchente" class="imagem-secao" />
-        <div class="conteudo">
-          <h2>Como Ajuda no Dia a Dia</h2>
-          <p>
-            Alertas em tempo real permitem evacuação segura e proteção de
-            bens.
-          </p>
-          <p>
-            Monitoramento contínuo traz tranquilidade durante períodos de
-            chuva.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section id="quiz" class="secao">
-      <h2 class="quiz__texto">Topa participar de um Quiz de 10 perguntas?</h2>
-      <a id="btn__quiz" class="botao__quiz" href="src/pages/quiz.html">Clique aqui para participar</a>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>© 2025 AquaSafe - Todos os direitos reservados</p>
-      <p>Solução inovadora para prevenção de enchentes urbanas</p>
-    </div>
-  </footer>
-</body>
-<script src="src/js/app.js"></script>
-<script src="src/js/regiao.js"></script>
-
+    </footer>
+  </body>
+  <script src="src/js/app.js"></script>
+  <script src="src/js/regiao.js"></script>
 </html>

@@ -65,7 +65,7 @@ header {
 }
 
 .menu a::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
@@ -86,7 +86,6 @@ header {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-
 
 header .container {
   display: flex;
@@ -148,15 +147,15 @@ header .container {
   background-color: #fff;
 }
 
-#radio1:checked~.first {
+#radio1:checked ~ .first {
   margin-left: 0;
 }
 
-#radio2:checked~.first {
+#radio2:checked ~ .first {
   margin-left: -33.33%;
 }
 
-#radio3:checked~.first {
+#radio3:checked ~ .first {
   margin-left: -66.66%;
 }
 
@@ -382,8 +381,6 @@ footer p {
   cursor: pointer;
 }
 
-
-
 /* CABECALHO MOBILE */
 
 .cabecalho__mobile {
@@ -396,7 +393,6 @@ footer p {
   z-index: 1000;
   padding: 10px 0;
 }
-
 
 .btn__abrir__menu i {
   margin: 0 30px;
@@ -424,7 +420,6 @@ footer p {
   overflow: hidden;
   transition: max-height 0.4s ease-in-out;
   display: block;
-
 }
 
 .menu__mobile.abrir__menu {
@@ -454,11 +449,10 @@ footer p {
   padding-left: 0px;
 }
 
-.menu__mobile.abrir__menu~.overlay__menu {
+.menu__mobile.abrir__menu ~ .overlay__menu {
   opacity: 1;
   visibility: visible;
 }
-
 
 .overlay__menu {
   background-color: #000000d1;
@@ -472,9 +466,6 @@ footer p {
   visibility: hidden;
   transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
 }
-
-
-
 
 /* Responsividade */
 @media (max-width: 1000px) {
@@ -537,8 +528,54 @@ footer p {
     font-size: 1.5rem;
     margin-inline: 6%;
   }
-}
 
+  .textImg {
+    flex-direction: column;
+    font-size: 1.5rem;
+  }
+
+  #regiaoEnchente {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 20px 0px 20px;
+    padding: 35px 30px;
+  }
+
+  #regiaoEnchente h1 {
+    max-width: 100vw;
+    font-size: 25px;
+  }
+
+  #regiaoEnchente h3 {
+    font-size: 15px;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
+  .textImg {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 30px;
+    gap: 25px;
+  }
+
+  #regiaoEnchente h4 {
+    max-width: 100vw;
+    font-size: 13px;
+    margin-left: 0px;
+    flex-wrap: wrap;
+  }
+
+  #regiaoEnchente img {
+    max-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .saida {
+    font-size: 40px;
+  }
+}
 
 /*Comeco botao de cores*/
 .dark-mode-toggle {
