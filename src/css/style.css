@@ -467,6 +467,10 @@ footer p {
     margin: 0px 8%;
   }
 
+  #imagem__enchente{
+    display: none;
+  }
+
   /* PAGINA QUIZ */
   .quiz__texto {
     font-size: 1.5rem;
