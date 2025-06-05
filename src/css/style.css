@@ -473,73 +473,6 @@ footer p {
   transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
 }
 
-
-
-
-/* Responsividade */
-@media (max-width: 1000px) {
-  .secao .container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .secao:nth-child(even) .container {
-    flex-direction: column;
-  }
-
-  .imagem-secao {
-    max-width: 100%;
-    margin-top: 30px;
-  }
-
-  /* HEADER */
-  header:not(.cabecalho__mobile) {
-    display: none;
-  }
-
-  .cabecalho__mobile {
-    display: flex;
-  }
-
-  .container {
-    width: 88%;
-    /* 100% - 6% dos dois lados = 88% */
-    margin: 0 auto;
-    /* centraliza */
-    padding: 0;
-  }
-
-  .overlay {
-    height: 600px;
-  }
-
-  /* MAIN */
-  .background {
-    height: calc(70vh - 90px);
-  }
-
-  .background::before {
-    height: calc(70vh - 90px);
-  }
-
-  .titulo__apresentacao {
-    font-weight: 700;
-    font-size: 30px;
-    margin: 0px 8%;
-  }
-
-  #imagem__enchente {
-    display: none;
-  }
-
-  /* PAGINA QUIZ */
-  .quiz__texto {
-    font-size: 1.5rem;
-    margin-inline: 6%;
-  }
-}
-
-
 /*Comeco botao de cores*/
 .dark-mode-toggle {
   background: none;
@@ -607,3 +540,79 @@ body.eclipse-mode footer {
 }
 
 /* fim da mudanca de cores */
+
+/* Responsividade */
+@media (max-width: 1000px) {
+  .secao .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .secao:nth-child(even) .container {
+    flex-direction: column;
+  }
+
+  .imagem-secao {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+
+  /* HEADER */
+  header:not(.cabecalho__mobile) {
+    display: none;
+  }
+
+  .cabecalho__mobile {
+    display: flex;
+  }
+
+  .container {
+    width: 88%;
+    /* 100% - 6% dos dois lados = 88% */
+    margin: 0 auto;
+    /* centraliza */
+    padding: 0;
+  }
+
+  .overlay {
+    height: 600px;
+  }
+
+  /* MAIN */
+  .background {
+    height: calc(70vh - 90px);
+  }
+
+  .background::before {
+    height: calc(70vh - 90px);
+  }
+
+  .titulo__apresentacao {
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0px 8%;
+  }
+
+  #imagem__enchente {
+    display: none;
+  }
+
+  /* PAGINA QUIZ */
+  .quiz__texto {
+    font-size: 1.5rem;
+    margin-inline: 6%;
+  }
+  .menu__mobile .dark-mode-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+    
+    .menu__mobile .dark-mode-toggle img {
+    height: 30px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}

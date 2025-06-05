@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="header__desktop">
     <div class="container">
       <img src="src/assets/images/Logo.png" alt="Logo AquaSafe" class="logo" />
       <nav>
@@ -52,15 +52,17 @@
           <li><a href="#publico">Público</a></li>
           <li><a href="#beneficios">Benefícios</a></li>
           <li><a href="#solucao">Solução</a></li>
+          <li>
+            <button id="darkModeToggleMobile" class="dark-mode-toggle">
+              <img src="src/assets/images/simbulo-sol.png" alt="Modo Claro" id="themeIconMobile" />
+            </button>
+          </li>
         </ul>
       </nav>
     </div>
     <div class="overlay__menu" id="overlay__menu"></div>
 
     <div class="container__mobile">
-      <button id="darkModeToggle" class="dark-mode-toggle">
-        <img src="src/assets/images/simbulo-sol.png" alt="Modo Claro" id="themeIcon" />
-      </button>
       <img src="/src/assets/images/Logo.png" alt="Logotipo sem fundo" class="logotipo__mobile" />
     </div>
   </header>

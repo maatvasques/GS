@@ -21,7 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', function() {
     const darkModeToggle = document.getElementById('darkModeToggle');
+    const darkModeToggleMobile = document.getElementById('darkModeToggleMobile');
     const themeIcon = document.getElementById('themeIcon');
+    const themeIconMobile = document.getElementById('themeIconMobile');
     const body = document.body;
     const savedTheme = localStorage.getItem('theme');
     let currentTheme = savedTheme || 'light'; 
@@ -31,22 +33,23 @@ document.addEventListener('DOMContentLoaded', function() {
         body.classList.add(`${theme}-mode`);
         localStorage.setItem('theme', theme);
 
-        if (theme === 'dark') {
-            themeIcon.src = 'src/assets/images/simbulo-lua.png';
-            themeIcon.alt = 'Modo Escuro';
-        } else if (theme === 'eclipse') {
-            themeIcon.src = 'src/assets/images/simbulo-eclipse.png';
-            themeIcon.alt = 'Modo Eclipse';
-        } else {
-            themeIcon.src = 'src/assets/images/simbulo-sol.png';
-            themeIcon.alt = 'Modo Claro';
-        }
+        const iconPath = theme === 'dark' ? 'simbulo-lua.png' : 
+                        theme === 'eclipse' ? 'simbulo-eclipse.png' : 
+                        'simbulo-sol.png';
+        
+        themeIcon.src = `src/assets/images/${iconPath}`;
+        if(themeIconMobile) themeIconMobile.src = `src/assets/images/${iconPath}`;
+        
+        themeIcon.alt = theme === 'dark' ? 'Modo Escuro' : 
+                       theme === 'eclipse' ? 'Modo Eclipse' : 
+                       'Modo Claro';
+        
         currentTheme = theme;
     }
 
-    setTheme(currentTheme); 
+    setTheme(currentTheme);
 
-    darkModeToggle.addEventListener('click', function() {
+    function toggleTheme() {
         if (currentTheme === 'light') {
             setTheme('dark');
         } else if (currentTheme === 'dark') {
@@ -54,7 +57,10 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             setTheme('light');
         }
-    });
+    }
+
+    if(darkModeToggle) darkModeToggle.addEventListener('click', toggleTheme);
+    if(darkModeToggleMobile) darkModeToggleMobile.addEventListener('click', toggleTheme);
 });
 
 let count = 1;
