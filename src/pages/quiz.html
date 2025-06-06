@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz</title>
-    <link rel="stylesheet" href="/src/css/quiz.css" />
-    <link rel="shortcut icon" href="/src/assets/images/Logo.png" />
+    <link rel="stylesheet" href="src/css/quiz.css" />
+    <link rel="shortcut icon" href="src/assets/images/Logo.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
       rel="stylesheet"
@@ -13,11 +13,11 @@
   </head>
   <body class="body__quiz">
     <header class="cabecalho__quiz">
-      <a href="/index.html">
+      <a href="../../index.html">
         <div class="icone__back">
           <img
             id="icone"
-            src="/src/assets/images/arrow-bar-left.svg"
+            src="src/assets/images/arrow-bar-left.svg"
             alt=""
           /></div
       ></a>
@@ -25,7 +25,11 @@
         Quiz AquaSafe - Prevenção de Enchentes
       </div>
       <button id="darkModeToggle" class="dark-mode-toggle">
-        <img src="../assets/images/simbulo-sol.png" alt="Modo Claro" id="themeIcon">
+        <img
+          src="../assets/images/simbulo-sol.png"
+          alt="Modo Claro"
+          id="themeIcon"
+        />
       </button>
     </header>
 
@@ -60,7 +64,7 @@
 
               <img
                 id="arrow__right"
-                src="/src/assets/images/arrow-right-short.svg"
+                src="src/assets/images/arrow-right-short.svg"
                 alt=""
               />
             </button>
@@ -71,5 +75,5 @@
 
     <div id="resultado" class="resultado"></div>
   </body>
-  <script src="/src/pages/quiz.js"></script>
+  <script src="src/pages/quiz.js"></script>
 </html>
