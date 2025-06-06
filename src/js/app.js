@@ -40,9 +40,8 @@ document.addEventListener("DOMContentLoaded", function () {
         ? "simbulo-eclipse.png"
         : "simbulo-sol.png";
 
-    themeIcon.src = `src/assets/images/${iconPath}`;
-    if (themeIconMobile)
-      themeIconMobile.src = `./src/assets/images/${iconPath}`;
+    themeIcon.src = `../assets/images/${iconPath}`;
+    if (themeIconMobile) themeIconMobile.src = `../assets/images/${iconPath}`;
 
     themeIcon.alt =
       theme === "dark"
