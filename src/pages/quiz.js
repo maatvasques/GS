@@ -15,13 +15,13 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorage.setItem("theme", theme);
 
     if (theme === "dark") {
-      themeIcon.src = "../assets/images/simbulo-lua.png";
+      themeIcon.src = "/src/assets/images/simbulo-lua.png";
       themeIcon.alt = "Modo Escuro";
     } else if (theme === "eclipse") {
-      themeIcon.src = "../assets/images/simbulo-eclipse.png";
+      themeIcon.src = "/src/assets/images/simbulo-eclipse.png";
       themeIcon.alt = "Modo Eclipse";
     } else {
-      themeIcon.src = "../assets/images/simbulo-sol.png";
+      themeIcon.src = "/src/assets/images/simbulo-sol.png";
       themeIcon.alt = "Modo Claro";
     }
     currentTheme = theme;
