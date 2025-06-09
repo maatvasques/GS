@@ -30,10 +30,8 @@ Além disso, disponibilizamos um **Quiz interativo** para conscientização da p
 - **Bootstrap Icons**
 - **Google Fonts** (Poppins e Open Sans)
 
-## 💻 Como Rodar o Projeto
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/aquasafe.git
+## 🔗 Confira o projeto
+Acesse aqui: https://globalsolution-alpha.vercel.app/index.html
 
 ## 📄 Licença
 Este projeto é disponibilizado para fins **educacionais** e **não comerciais**. <br>
